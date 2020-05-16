@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency converter</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="converter">
+        <div class="title">
+            <h2>Currency converter</h2>
+            <p>*data from NBP <br/> (based on PLN)</p>
+        </div>
+        <div class="have__box">
+            <h2>Currency I Have:</h2>
+            <select class="select__from" name="from">
+                <option value="PLN">PLN (złoty)</option>
+            </select>
+            <h3>Amount</h3>
+            <input class="input__from" type="number" min="0" name="amount" value="1">
+        </div>
+        <div class="convert__box">
+            <div class="change-currency"><i class="fas fa-exchange-alt"></i></div>
+        </div>
+        <div class="want__box">
+            <h2>Currency I Want:</h2>
+            <select class="select__to" name="to">
+                <option value="PLN">PLN (złoty)</option>
+            </select>
+            <h3>Amount</h3>
+            <input class="input__to" type="text" min="0" name="amount" value="0" readonly>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
